@@ -1,5 +1,7 @@
+import CreateProduct from "./components/CreateProduct.tsx";
 import ErrorMessage from "./components/ErrorMessage.tsx";
 import Loader from "./components/Loader.tsx";
+import Modal from "./components/Modal.tsx";
 import Product from "./components/Product";
 import useProducts from "./hooks/products.ts";
 
@@ -13,6 +15,9 @@ function App() {
       {products.map((product) => (
         <Product product={product} key={product.id} />
       ))}
+      <Modal title="Create new Product">
+        <CreateProduct />
+      </Modal>
     </div>
   );
 }

@@ -15,7 +15,7 @@ const Product = ({ product }: ProductProps) => {
     <div className="border py-2 px-4 rounded flex flex-col items-center mb-2">
       <img src={product.image} alt={product.title} className=" w-24" />
       <p>{product.title}</p>
-      <p className="font-bold">{product.price}</p>
+      <p className="font-bold">{product.price}$</p>
       <button
         className={btnClasses.join(" ")}
         onClick={() => setDetails((prev) => !prev)}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <nav className="h-[50px] flex justify-between px-5 bg-gray-500 text-white items-center">
+    <nav className="h-[48px] flex justify-between px-5 text-white items-center bg-black">
       <span className="font-bold">Web shop</span>
       <span>
         <Link to="/" className=" mr-2">

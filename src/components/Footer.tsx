@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 const LINKS = [
   {
     title: "Product",
-    items: ["Overview", "Features", "Solutions", "Tutorials"],
+    items: ["Overview", "Solutions"],
   },
   {
     title: "Company",
@@ -12,7 +12,7 @@ const LINKS = [
   },
   {
     title: "Resource",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    items: ["Blog", "Newsletter", "Help center"],
   },
 ];
 
@@ -22,12 +22,12 @@ const Footer = () => {
   return (
     <>
       <footer className="relative w-full">
-        <div className="mx-auto w-full  px-8  bg-black">
-          <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2  text-white items-center">
+        <div className="w-full px-8 mx-auto bg-black">
+          <div className="grid items-center justify-between grid-cols-1 gap-4 text-white md:grid-cols-2">
             <Typography variant="h5" className="mb-6">
               Webshop Group
             </Typography>
-            <div className="grid grid-cols-3 justify-between gap-4 mt-4">
+            <div className="grid justify-between grid-cols-3 gap-4 mt-4">
               {LINKS.map(({ title, items }) => (
                 <ul key={title}>
                   <Typography
@@ -53,10 +53,10 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+          <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-blue-gray-50 md:flex-row md:justify-between">
             <Typography
               variant="small"
-              className="mb-4 text-center font-normal text-white md:mb-0"
+              className="mb-4 font-normal text-center text-white md:mb-0"
             >
               &copy; {currentYear}{" "}
               <a href="https://material-tailwind.com/">Webshop Group</a>. All
@@ -66,10 +66,10 @@ const Footer = () => {
               <Typography
                 as="a"
                 href="#"
-                className="opacity-80 transition-opacity hover:opacity-100"
+                className="transition-opacity opacity-80 hover:opacity-100"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="white"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -84,10 +84,10 @@ const Footer = () => {
               <Typography
                 as="a"
                 href="#"
-                className="opacity-80 transition-opacity hover:opacity-100"
+                className="transition-opacity opacity-80 hover:opacity-100"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="white"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -102,10 +102,10 @@ const Footer = () => {
               <Typography
                 as="a"
                 href="#"
-                className="opacity-80 transition-opacity hover:opacity-100"
+                className="transition-opacity opacity-80 hover:opacity-100"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="white"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -116,10 +116,10 @@ const Footer = () => {
               <Typography
                 as="a"
                 href="#"
-                className="opacity-80 transition-opacity hover:opacity-100"
+                className="transition-opacity opacity-80 hover:opacity-100"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="white"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -134,10 +134,10 @@ const Footer = () => {
               <Typography
                 as="a"
                 href="#"
-                className="opacity-80 transition-opacity hover:opacity-100"
+                className="transition-opacity opacity-80 hover:opacity-100"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="white"
                   viewBox="0 0 24 24"
                   aria-hidden="true"

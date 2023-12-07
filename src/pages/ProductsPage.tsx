@@ -18,7 +18,7 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-2xl pt-5">
+    <div className="grid max-w-2xl grid-cols-3 gap-4 pt-5 mx-auto">
       {loading && <Loader />}
       {error && <ErrorMessage error={error} />}
       {products.map((product) => (
@@ -31,7 +31,7 @@ const ProductsPage = () => {
       )}
 
       <button
-        className="fixed bottom-5 right-5 rounded-full bg-red-500 text-white text-2xl px-4 py-2"
+        className="fixed px-4 py-2 text-2xl text-white bg-red-500 rounded-full bottom-5 right-5"
         onClick={open}
       >
         +

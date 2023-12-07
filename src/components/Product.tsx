@@ -12,8 +12,10 @@ const Product = ({ product }: ProductProps) => {
   const btnClasses = ["py-2 px-4 border", btnBgCLassName];
 
   return (
-    <div className="border py-2 px-4 rounded flex flex-col items-center mb-2">
-      <img src={product.image} alt={product.title} className=" w-24" />
+    <div className="flex flex-col items-center max-w-sm px-4 py-2 mb-2 border rounded shadow">
+      <div className="w-1/2 h-48 m-auto">
+        <img src={product.image} alt={product.title} className="w-24 h-36" />
+      </div>
       <p>{product.title}</p>
       <p className="font-bold">{product.price}$</p>
       <button

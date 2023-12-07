@@ -18,7 +18,7 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="grid max-w-2xl grid-cols-3 gap-4 pt-5 pb-3 mx-auto">
+    <div className="grid max-w-4xl grid-cols-3 gap-6 pt-5 pb-3 mx-auto">
       {loading && <Loader />}
       {error && <ErrorMessage error={error} />}
       {products.map((product) => (
